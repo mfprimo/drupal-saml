@@ -8,10 +8,10 @@ $settings = array (
   'sp' => array (
     'entityId' => variable_get('saml_advanced_settings_sp_entity_id', 'php-saml'),
     'assertionConsumerService' => array (
-      'url' => url('onelogin_saml/acs', array('absolute' => true)),
+      'url' => url('onelogin_saml/acs', array('absolute' => true, 'language' => '')),
     ),
     'singleLogoutService' => array (
-      'url' => url('onelogin_saml/sls', array('absolute' => true)),
+      'url' => url('onelogin_saml/sls', array('absolute' => true, 'language' => '')),
     ),
     'NameIDFormat' => variable_get('saml_advanced_settings_nameid_format', 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress'),
     'x509cert' => variable_get('saml_advanced_settings_sp_x509cert', ''),
